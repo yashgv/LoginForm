@@ -1,0 +1,155 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.registered{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(255, 47, 0);
+    text-align: center;
+    padding: 3px;
+}
+.success{
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    height: 30px;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 3px;
+}
+.formWrapper{
+    width: 750px;
+    height: 550px;
+    padding: 10px;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
+}
+h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+}
+
+#Pimage{
+    position: relative;
+    display: block;
+    background-color: rgba(235,235,235);
+    width: 100px;
+    height: 100px;
+}
+
+#srcImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+#Pimage #ImgInput{
+    cursor:pointer;
+    position: absolute;
+    opacity: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+}
+#Pimage p{
+    position: absolute;
+    margin-left: 5px;
+    line-height: 20px;
+    text-align: center;
+    text-wrap: wrap;
+    width: 90px;
+    z-index: 1;
+}
+
+
+.mainWrapper{
+    width: 100%;
+    height: 80%;
+}
+.SignUpForm{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 10px;
+    width: 100%;
+    height: 100%;
+}
+.input-container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-container label{
+    text-indent: 10px;
+    padding: 3px;
+}
+.SignUpForm input::placeholder{
+    text-indent: 13px;
+}
+
+.SignUpForm input{
+    cursor: pointer;
+    height: 35px;
+    width: 250px;
+    background-color: rgb(235, 235, 235);
+    color: gray;
+    border: none;
+    border-radius: 3px;
+}
+.SignUpForm input:focus{
+    outline: 0.7px solid gray;
+    background-color: rgb(220, 220, 220);
+    text-indent: 10px;
+
+}
+.SignUpForm label{
+    height: 15px;
+    width: 250px;
+}
+
+.SignUpForm select {
+    cursor: pointer;
+    height: 35px;
+    width: 250px;
+    background-color: rgba(235,235,235);
+}
+.SignUpForm a{
+    text-decoration: none;
+    color: blue;
+}
+.SignUpForm button{
+    margin-top: -10px;
+    height: 35px;
+    width: 150px;
+    border: 0.7px solid gray;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.alert{
+    margin-top: 10px;
+    color: red;
+}
